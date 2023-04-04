@@ -1,0 +1,99 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+body {
+    /* color palette */
+    --dark-blue: hsl(213, 96%, 18%);
+    --dark-blue-hover: hsl(213, 72%, 31%);
+    --purple: hsl(243, 100%, 62%);
+    --purple-hover: hsl(243, 100%, 77%);
+    --light-blue: hsl(228, 100%, 84%);
+    --sky-blue: hsl(206, 94%, 87%);
+    --grey: hsl(231, 11%, 63%);
+    --light-grey: hsl(229, 24%, 87%);
+    --input-border: hsl(231,23%, 87%);
+    --very-light-grey: hsl(231, 100%, 99%);
+    --body-bg: hsl(218, 100%, 97%);
+    --red: hsl(354, 84%, 57%);
+    --white: hsl(0, 0%, 100%);
+}
+
+#app {
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 11px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.btn {
+    height: 48px;
+    width: 128px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue-hover);
+}
+
+.btn-secondary {
+    width: fit-content;
+    color: var(--grey);
+}
+
+.btn-secondary:hover {
+    color: var(--dark-blue);
+}
+
+.btn-submit {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.btn-submit:hover {
+    background-color: var(--purple-hover);
+}
